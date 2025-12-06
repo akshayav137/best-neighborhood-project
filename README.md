@@ -19,5 +19,8 @@ Data set #2: Arrest Data
 This data set feeds the Pittsburgh Montyhly Criminal Activity Dashboard. This data set consists of criminal activity from 01/01/24 - last day of last month.
 https://data.wprdc.org/dataset/b62e8c3f-f40e-4b3f-9c60-82509bc397fb/resource/e419c20c-8df4-4729-830c-e49427a656e0/download/pbp_arrests_2024_jan1_thru_nov30_2025.xlsx
 
+Data set #3: Crash Data
+https://data.wprdc.org/dataset/allegheny-county-crash-data/resource/4c016b4c-59f0-45ca-981c-718c784b3462
+Contains locations and information about every crash incident reported to the police in Allegheny County from 2004 to 2024. Fields include injury severity, fatalities. 
 
 Our repository includes various data sets that we thought would help us figure out what the best neighborhood is. We analyzed these data sets and made our conclusions.
