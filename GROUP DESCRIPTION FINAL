@@ -1,0 +1,10 @@
+Introduction:
+
+When me and Akshaya began planning for this project, we decided that our best neighborhood shoudl be the one that we would feel safest in. Therefore, our main factor when looking for 
+data bases became Safety. With this in mind, we used the WPRDC to find data sets that include Crash data, Arrest data, and Meidan age at Death. Another reason we chose these data sets 
+is because we were able to find Neighborhoods/municipality codes readily available, which would make it easier for us to complete the analysis. 
+
+Metric:
+We tried many things but we decided to first analyze Crash data and analyze only the top four safest neighborhoods that this data set yielded. By doing so, we were able to narrow down the 
+many neighborhoods into a few inorder too actually be able to make a conclusion. Later on, you will see that our analysis will only discuss Squirrel Hill North, Central Oakland, Highland 
+Park, and Shady Side as these were the best amongst the crash data.
