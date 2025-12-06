@@ -1,0 +1,41 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+df = pd.read_csv("crashdata.csv", low_memory=False)
+df['TOT_INJ_COUNT'] = df['TOT_INJ_COUNT'].fillna(0)
+df = df[df['MUNICIPALITY'].notna()]
+
+
+crash_counts = (
+    df.groupby('MUNICIPALITY')
+      .size()
+      .reset_index(name='TOTAL_CRASHES')
+)
+
+injury_counts = (
+    df.groupby('MUNICIPALITY')['TOT_INJ_COUNT']
+      .sum()
+      .reset_index(name='TOTAL_INJURIES')
+)
+
+metrics = pd.merge(crash_counts, injury_counts, on='MUNICIPALITY')
+
+metrics['SAFETY_SCORE'] = (
+    metrics['TOTAL_CRASHES'] * 0.7 +
+    metrics['TOTAL_INJURIES'] * 0.3
+)
+
+
+safest = metrics.sort_values('SAFETY_SCORE')
+
+print("Top 10 Safest Neighborhoods (Crash-Based Metric)")
+display(safest.head(10))
+
+plt.figure(figsize=(10, 6))
+plt.barh(safest.head(10)['MUNICIPALITY'], safest.head(10)['SAFETY_SCORE'])
+plt.xlabel("Safety Score (lower = safer)")
+plt.ylabel("Municipality")
+plt.title("Top 10 Safest Neighborhoods in Pittsburgh (Crash Data)")
+plt.gca().invert_yaxis()
+plt.show()
