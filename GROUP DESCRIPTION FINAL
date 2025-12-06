@@ -8,3 +8,14 @@ Metric:
 We tried many things but we decided to first analyze Crash data and analyze only the top four safest neighborhoods that this data set yielded. By doing so, we were able to narrow down the 
 many neighborhoods into a few inorder too actually be able to make a conclusion. Later on, you will see that our analysis will only discuss Squirrel Hill North, Central Oakland, Highland 
 Park, and Shady Side as these were the best amongst the crash data.
+
+Best Neighborhood: 
+To determine the best neighborhood in Pittsburgh, we used a composite metric that combines safety, traffic risk, and median death by age outcomes. Neighborhoods with fewer arrests, lower 
+crash rates, and higher median age at death received higher scores. Based on this metric, Squirrel Hill came out as our top neighborhood, doing well and scoring good in all three factors. 
+This makes sense with its reputation as a safe, family-friendly area with good access to parks, schools, and a lot of other community resources as well as safety. 
+
+Conclusion: 
+Using our crash-based Safety Score, we identified the safest Pittsburgh neighborhoods—those with the fewest crashes and injuries. This includes Squirrel Hill North, which came first in both
+categories. The second was Central Oakland, 2nd in median age data​ and 3rd in arrests data. Third was Highland Park, 4th in median age data​ and 2nd in arrests data. And last was Shadyside, 
+3rd in median age data​ and 4th in arrests data. This metric provides a clear, data-filled view of traffic safety, though it doesn’t apply for other aspects of neighborhood quality.
+
